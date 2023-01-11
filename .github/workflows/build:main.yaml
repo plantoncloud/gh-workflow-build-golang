@@ -1,8 +1,16 @@
-name: build:afs-leftbin-play-uc1:main
+name: build:golang:main
+
 on:
-  push:
-    branches:
-      - main
+  workflow_call:
+    inputs:
+      config-path:
+        required: true
+        type: string
+    secrets:
+      PLANTON_CLOUD_SERVICE_CLIENT_ID:
+        required: true
+      PLANTON_CLOUD_SERVICE_CLIENT_SECRET:
+        required: true
 
 jobs:
   build-code:
