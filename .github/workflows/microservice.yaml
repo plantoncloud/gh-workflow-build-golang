@@ -5,14 +5,19 @@ on:
     inputs:
       PLANTON_CLOUD_SERVICE_CLI_ENV:
         required: true
+        type: string
       PLANTON_CLOUD_ARTIFACT_STORE_ID:
         required: true
+        type: string
       PLANTON_CLOUD_ARTIFACT_STORE_DOCKER_REPO_HOSTNAME:
         required: true
+        type: string
       CONTAINER_IMAGE_NAME:
         required: true
+        type: string
       CONTAINER_IMAGE_VERSION:
         required: true
+        type: string
     secrets:
       PLANTON_CLOUD_SERVICE_CLIENT_ID:
         required: true
