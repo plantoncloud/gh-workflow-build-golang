@@ -2,10 +2,6 @@ name: build:golang:main
 
 on:
   workflow_call:
-    inputs:
-      config-path:
-        required: true
-        type: string
     secrets:
       PLANTON_CLOUD_SERVICE_CLIENT_ID:
         required: true
